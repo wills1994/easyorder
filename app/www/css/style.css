@@ -1,1 +1,7 @@
 /* Empty. Add your own CSS if you like */
+#logoprincipal {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: inherit;
+}

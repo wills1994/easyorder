@@ -1,0 +1,15 @@
+2015-04-07 11:14:58.944 easyorder[9808:705742] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/arkaitz/Library/Developer/CoreSimulator/Devices/CEAF1D2C-646C-4D4A-AE01-81C7D5CCBAA3/data/Containers/Data/Application/D37B1007-1AA9-4E51-9ACD-21F0A97B8B46/Library/Cookies/Cookies.binarycookies
+2015-04-07 11:14:59.279 easyorder[9808:705742] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-07 11:14:59.280 easyorder[9808:705742] Multi-tasking -> Device: YES, App: YES
+2015-04-07 11:14:59.305 easyorder[9808:705742] Unlimited access to network resources
+2015-04-07 11:14:59.615 easyorder[9808:705742] [CDVTimer][keyboard] 0.142992ms
+2015-04-07 11:14:59.615 easyorder[9808:705742] [CDVTimer][TotalPluginStartup] 0.473022ms
+2015-04-07 11:15:00.513 easyorder[9808:705742] Resetting plugins due to page load.
+2015-04-07 11:15:01.004 easyorder[9808:705742] Finished load of: file:///Users/arkaitz/Library/Developer/CoreSimulator/Devices/CEAF1D2C-646C-4D4A-AE01-81C7D5CCBAA3/data/Containers/Bundle/Application/72F9E8E0-FF17-4F03-A1DF-75CAE378CD11/easyorder.app/www/index.html#/tab/dash
+2015-04-07 11:17:09.013 easyorder[9808:706005] NSURLConnection/CFURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9813)
+2015-04-07 11:17:09.053 easyorder[9808:706005] NSURLConnection/CFURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9813)
+2015-04-07 11:17:09.058 easyorder[9808:706005] NSURLConnection/CFURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9813)
+2015-04-07 11:17:09.058 easyorder[9808:706005] NSURLConnection/CFURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9813)
+2015-04-07 11:17:10.732 easyorder[9808:706005] NSURLConnection/CFURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9813)
+2015-04-07 11:17:12.986 easyorder[9808:706005] NSURLConnection/CFURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9813)
+2015-04-07 11:17:26.291 easyorder[9808:706005] NSURLConnection/CFURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9813)
