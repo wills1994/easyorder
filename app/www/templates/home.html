@@ -1,0 +1,18 @@
+<ion-view view-title="Easy Order">
+  <ion-content class="padding home">
+    <img id="logoprincipal" src="img/easyorder.png" alt="Easy Order">
+    <h1>Bienvenido!</h1>
+
+    <form>
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Ingrese el número de mesa
+          </div>
+          <select ng-disabled="!mesas.length">
+            <option ng-repeat="mesa in mesas" value="{{ mesa.id }}">{{ mesa.codigo }}</option>
+          </select>
+        </label>
+        <button class="button button-block button-positive" ng-disabled="!mesas.length">Adelante</button>
+      </form>
+  </ion-content>
+</ion-view>

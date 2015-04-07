@@ -5,3 +5,12 @@
     margin: 0 auto;
     display: inherit;
 }
+
+h1, h2 {
+    width: content;
+    text-align: center;
+}
+
+.home form {
+    margin-top: 2em;
+}
