@@ -1,0 +1,208 @@
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, q, small, span,
+strong, sub, sup, tt, var, legend, fieldset{
+	margin:0;padding:0;
+	box-sizing:border-box;
+	height: auto;
+}
+img, fieldset{
+	border:0;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+	display:block;
+}
+
+body{
+	background: url(../image/parquet.png);
+	overflow-x: hidden;
+}
+header{
+	background-color: #fff;
+	height: 140px;
+	width: 100%;
+	border-top: 4px solid #ff9c00;
+	border-left: 4px solid #ff9c00;
+	border-right: 4px solid #ff9c00;
+}
+#logo{
+	background: url(../image/EasyOrder.png) center;
+	background-size: 120%;
+	background-color: #fff;
+	width: 130px;
+	height: 130px;
+	margin: 8px auto;
+}
+#user{
+	text-align:center;
+}
+input{
+	border: 2px solid #ff9c00;
+	padding: 5px;
+	background-color: #fff;
+	margin-top: 10px;
+}
+
+#main{
+	width: 100%;
+	padding-bottom:400px;
+	background-color: rgba(255,255,255,0.6);
+	border: 4px solid #ff9c00;
+	margin: 0 auto;
+	height:auto!important;
+}
+#main h2{
+	text-align: center;
+	padding: 20px;
+}
+
+
+/*#message{
+	position: relative;
+	width: 70px;
+	height: 70px;
+	background: url(../image/alert.png) center;
+	background-size: 140%;
+	background-color: #fff;
+	border: 2px solid #ff9c00;
+	float: left;
+	clear: both;
+	top: -465px;
+}
+#message img{
+
+}
+#info{
+	position: relative;
+	width: 70px;
+	height: 70px;
+	background: url(../image/info.png) center no-repeat;
+	background-size: 80%;
+	background-color: #fff;
+	border: 2px solid #ff9c00;
+	float: right;
+	clear: both;
+	top: -540px;
+}*/
+
+.block_mesa{
+	width:31%;
+	height:60px;
+	margin:1px;
+	background-color:gray;
+	float: left;
+	color: black;
+	text-align:center;
+	line-height:60px;
+}
+
+
+.cuadrado_ref{width:15px;height:15px;margin-right:10px;background-color:gray;display:inline;padding:7px;}
+.referencias{padding-top:10px;padding-bottom:20px;text-align:center;}
+.contenedor_mesas{max-width:700px;margin:auto;}
+.rojo{
+	background-color:red;
+}
+.blanco{
+	background-color:white;
+}
+.verde{
+	background-color:green;	
+}
+
+
+/*PANEL DE MENSAJES*/
+a{
+	text-decoration: none;
+}
+.panel {
+    border: 4px solid #ff9c00;
+    background-color: #fff;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 500px;
+    text-align: center;
+    vertical-align: center;
+    -webkit-transition: right 0.25s ease-in-out;
+    -mz-transition: right 0.25s ease-in-out;
+    -o-transition: right 0.25s ease-in-out;
+}
+
+.panel-invisible {
+    right: -515px;
+}
+
+#botones {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    text-align: right;
+    height: 27px;
+}
+
+.boton {
+    border: 1px solid gray;
+    margin: 5px;
+    padding: 1px;
+    display: inline-block;
+    font-size: small;
+}
+
+.boton a {
+    text-decoration: none;
+}
+
+.contenedor {
+    margin-top: 30px;
+    text-align: center;
+    margin-right: 300px;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    -webkit-transition: margin-right 0.25s ease-in-out;
+    -mz-transition: margin-right 0.25s ease-in-out;
+	-o-transition: margin-right 0.25s ease-in-out;
+}
+
+.contenedor-expandido {
+    margin-right: 0;
+}
+
+
+
+@media screen and (max-width:500px){
+	.contenedor_mesas{max-width:100%;}
+}
+#panel{
+	text-align: center;
+}
+table{
+	text-align: center;
+	border: 2px solid #ff9c00;
+	margin: 10px auto;
+}
+
+.pedido_res{
+	width: 25px;
+	height: 25px;
+	position: relative;
+	top: -25px;
+}
+.verde{
+	background-color: green;
+}
+.yellow{
+	background-color: yellow;
+}
+.refresh{
+	  width: 25px;
+	  height: 25px;
+	  background: url('../image/refresh.png') #FFFFFF;
+	  top: -85px;
+	  position: relative;
+}

@@ -1,0 +1,35 @@
+* obligatorio    |
+-----------------|
+
+(1) INSTALAR GIT
+
+*->   git config --global user.name "nombre"
+*->   git config --global user.email "email"
+
+------copiar en local desde bitbucket--------------------------------
+*-> git clone https://wills1994@bitbucket.org/wills1994/esay_order.git 
+----------------------------------------------------------------------
+
+-------Como subir los archivos desde local a bitbucket(repositorio)------
+*-> git pull origin master //cojo todo proyecto desde bitbucket actualizado.
+-> git status //ver estado del repostiorio local
+
+*-> git add file_name   -> git add . //agrega varios archivos creados en local
+*->git commit -m "comentarios" 
+*-> git pull origin master //cojo todo proyecto desde bitbucket actualizado.
+*->git push origin master //hacer commit cuando hacemos cambios
+
+///////////////////
+->borrar archivos
+	git rm filename
+//////////////////////
+
+//////////////////////////////////
+Subir en dominio.
+git push ssh://5502db184382ec06c30000c8@easyorder-aedeti.rhcloud.com/~/git/easyorder.git/
+///////////////////////////////////
+easyorder-aedeti.rhcloud.com/phpmyadmin/
+user:adminVZ63SeH
+pass:MZWYW5WGt1fR
+
+Connection URL: mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/

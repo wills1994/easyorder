@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1">
+	<title>EasyOrder</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+	<header class="wrapper" id="header">
+	<div id="logo">
+		<a href="index.html"><img id="logo2" src="images/Easyorder2.png" alt="EasyOrder"></a>
+	</div>
+		<nav id='navmenu'>
+			<ul id="menusup">
+				<li id="menu">
+					<a href="#carta"><img src="images/menu.svg" class="svg" alt=""></a>
+				</li>
+				<li id="camarero">
+					<a href="#waitersection"><img src="images/waitres.svg" class="svg" alt=""></a>
+				</li>
+				<li id="factura"> <a href="#resumenpedido"><img src="images/note.svg" class="svg" alt=""></a><span class='sumaCantidades'></span>
+				</li>
+			</ul>
+		</nav>
+	</header>
+        <div class="wrapper">
+             <br> <br>
+			<div id="carta">
+			
+			</div>
+			
+			<div id="waitersection">
+				 <!--
+	                <button id="maspan" class="disabled">Pedir más pan</button>
+	                <button id="masServilletas" class="disabled">Pedir servilletas</button>
+	                
+	                <button id="PedirCuenta" class="disabled">
+	                    Pedir cuenta
+	                </button>
+	                -->
+				<button id="LlamarCamarero">
+				   Llamar Camarero
+				</button>
+	   		</div><!--end waitersection-->
+			<div id="resumenpedido">
+                <div id="listado">
+                </div>
+                <div id="botones">
+                    <section>
+                        <button id='ConfirmarPedido'>Confirmar Pedido</button> 
+                        <button id='anadirmas'>Anadir mas</button>
+                    </section>                
+                </div>
+			</div>
+		</div><!--end wrapper-->
+
+	<script src="js/jquery-2.1.3.js"></script>
+    <script src="js/mvc.js"></script>
+
+</body>
+</html>
