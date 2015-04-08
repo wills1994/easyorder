@@ -1,1 +1,20 @@
 /* Empty. Add your own CSS if you like */
+#logoprincipal {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: inherit;
+}
+
+h1, h2 {
+    width: content;
+    text-align: center;
+}
+
+.home form {
+    margin-top: 2em;
+}
+
+.pull-right {
+    float: right;
+}

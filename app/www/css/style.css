@@ -14,3 +14,7 @@ h1, h2 {
 .home form {
     margin-top: 2em;
 }
+
+.pull-right {
+    float: right;
+}

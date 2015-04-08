@@ -13,3 +13,25 @@
 2015-04-07 11:17:10.732 easyorder[9808:706005] NSURLConnection/CFURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9813)
 2015-04-07 11:17:12.986 easyorder[9808:706005] NSURLConnection/CFURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9813)
 2015-04-07 11:17:26.291 easyorder[9808:706005] NSURLConnection/CFURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9813)
+2015-04-08 10:01:09.063 easyorder[12253:857130] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/arkaitz/Library/Developer/CoreSimulator/Devices/CEAF1D2C-646C-4D4A-AE01-81C7D5CCBAA3/data/Containers/Data/Application/93B39E20-1B31-4407-AB2D-B7320E645931/Library/Cookies/Cookies.binarycookies
+2015-04-08 10:01:09.422 easyorder[12253:857130] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 10:01:09.423 easyorder[12253:857130] Multi-tasking -> Device: YES, App: YES
+2015-04-08 10:01:09.440 easyorder[12253:857130] Unlimited access to network resources
+2015-04-08 10:01:09.744 easyorder[12253:857130] [CDVTimer][keyboard] 0.151992ms
+2015-04-08 10:01:09.745 easyorder[12253:857130] [CDVTimer][TotalPluginStartup] 1.140058ms
+2015-04-08 10:01:10.162 easyorder[12253:857130] Resetting plugins due to page load.
+2015-04-08 10:01:10.572 easyorder[12253:857130] Finished load of: file:///Users/arkaitz/Library/Developer/CoreSimulator/Devices/CEAF1D2C-646C-4D4A-AE01-81C7D5CCBAA3/data/Containers/Bundle/Application/D4375400-3877-4D95-A2B0-D67E213283C6/easyorder.app/www/index.html#/home
+2015-04-08 10:01:13.214 easyorder[12253:857435] Communications error: <OS_xpc_error: <error: 0x2d715f4> { count = 1, contents =
+	"XPCErrorDescription" => <string: 0x2d7183c> { length = 22, contents = "Connection interrupted" }
+}>
+2015-04-08 12:20:17.159 easyorder[12942:902125] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/arkaitz/Library/Developer/CoreSimulator/Devices/CEAF1D2C-646C-4D4A-AE01-81C7D5CCBAA3/data/Containers/Data/Application/1B68D8DF-FC0E-4E8F-8229-85B8E4C2AA6C/Library/Cookies/Cookies.binarycookies
+2015-04-08 12:20:17.575 easyorder[12942:902125] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 12:20:17.576 easyorder[12942:902125] Multi-tasking -> Device: YES, App: YES
+2015-04-08 12:20:17.594 easyorder[12942:902125] Unlimited access to network resources
+2015-04-08 12:20:17.860 easyorder[12942:902125] [CDVTimer][keyboard] 0.095010ms
+2015-04-08 12:20:17.860 easyorder[12942:902125] [CDVTimer][TotalPluginStartup] 1.137018ms
+2015-04-08 12:20:18.202 easyorder[12942:902125] Resetting plugins due to page load.
+2015-04-08 12:20:18.613 easyorder[12942:902125] Finished load of: file:///Users/arkaitz/Library/Developer/CoreSimulator/Devices/CEAF1D2C-646C-4D4A-AE01-81C7D5CCBAA3/data/Containers/Bundle/Application/81815328-CFA2-452E-B5DB-9D14277E0DBE/easyorder.app/www/index.html#/home
+2015-04-08 12:20:29.173 easyorder[12942:902125] HomeCtrl.adelante()
+2015-04-08 12:20:29.174 easyorder[12942:902125] CartaCtrl
+2015-04-08 12:20:29.308 easyorder[12942:902125] ERROR: 404
