@@ -45,7 +45,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     // Each tab has its own nav history stack:
 
     .state('tab.carta', {
-        url: '/carta',
+        url: '/carta/:idMesa',
         views: {
             'tab-carta': {
                 templateUrl: 'templates/tab-carta.html',
@@ -55,7 +55,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     })
 
     .state('tab.camarero', {
-        url: '/camarero/:mesaId',
+        url: '/camarero',
         views: {
             'tab-camarero': {
                 templateUrl: 'templates/tab-camarero.html',
@@ -65,7 +65,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     })
 
     .state('tab.pedido', {
-        url: '/pedido/:mesaId',
+        url: '/pedido',
         views: {
             'tab-pedido': {
                 templateUrl: 'templates/tab-pedido.html',

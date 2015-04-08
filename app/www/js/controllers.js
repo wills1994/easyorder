@@ -10,16 +10,17 @@ angular.module('starter.controllers', ['starter.services'])
         console.log('HomeCtrl.adelante()');
         // Obtener el valor de la mesa
         // Enviar el estado al servidor
+    
         Mesas.changeState(mesaId);
+        
         // Navegar a otra pantalla para mostrar la carta
-        $state.go('tab.carta', {}, {reload: true});
+        $state.go('tab.carta',{idMesa:mesaId}, {reload: true});
     }
 
 }])
 
 .controller('CartaCtrl', ['Carta', '$scope', function(Carta, $scope){
     console.log('CartaCtrl');
-
     Carta.getCategorias(function(categorias){
         for (cat in categorias) {
             for (producto in categorias[cat].productos) {
@@ -39,6 +40,14 @@ angular.module('starter.controllers', ['starter.services'])
             producto.cantidad--;
         }
     };
-}])
 
+}])
+.controller('CamareroCtrl', ['Camarero', '$scope', function(Camarero, $scope){
+    console.log('CamareroCtrl');
+
+}])
+.controller('PedidoCtrl', ['Pedido', '$scope', function(PedidoCtrl, $scope){
+    console.log('PedidoCtrl');
+
+}])
 ;

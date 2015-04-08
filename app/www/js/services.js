@@ -54,5 +54,10 @@ angular.module('starter.services', [])
     }
   };
 }])
-
+.factory('Camarero', ['$http', function($http){
+  return null;
+}])
+.factory('Pedido', ['$http', function($http){
+  return null;
+}])
 ;
