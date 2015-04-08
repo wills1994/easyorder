@@ -1,7 +1,14 @@
 angular.module('starter.services', [])
 
-.factory('Mesas', function() {
-  // Might use a resource here that returns a JSON array
+.factory('Mesas', ['$http', function($http) {
+
+  $http.jsonp('http://easyorder.esy.es/model/functions.php?callback=JSON_CALLBACK&selectmesa=null')
+    .success(function(data, status, headers, config) {
+      console.log(data);
+    })
+    .error(function(data, status, headers, config) {
+      console.log(status);
+    });
 
   var mesas = [
       {
@@ -27,4 +34,4 @@ angular.module('starter.services', [])
       return null;
     }
   };
-});
+}]);

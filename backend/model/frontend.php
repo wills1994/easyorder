@@ -34,10 +34,9 @@ if(isset($_POST['id_mesa'],$_POST['estado'])){
         $result = mysql_query($query) or handleDBerror();
     }
 
-}else if(isset($_POST["selectmesa"])){
+}else if(isset($_GET["selectmesa"])){
 	$query = "SELECT * FROM mesa";
 	consulta($query);
-
 }else if(isset($_POST['id'])){
 	$idCat=$_POST['id'];
 	$query = "SELECT producto.nombre as nom_pro,producto.precio ,categoria.nombre as cat_nombre FROM producto,categoria WHERE producto.id_categoria=categoria.id AND categoria.id=".$idCat;
@@ -56,19 +55,19 @@ else{
  * @param  [String] $sql [parametro serà sql]
  * @return [json]      [retorna array de objectos]
  */
-function consulta($sql){
+function consulta($sql, $callback){
 	$vacio=false;
 	$result = mysql_query($sql) or handleDBerror();
 
 		if(mysql_num_rows($result) == 0){
 			$vacio=false;
-			echo json_encode($vacio);
+			echo $_GET["callback"] . "(" . json_encode($vacio) . ")";
 		}else{
 			$vacio=true;
 			while($row = mysql_fetch_object($result)){
 				$array[] = $row;
 			}
-			echo json_encode($array);
+			echo $_GET["callback"] . "(" . json_encode($array) . ")";
 		}
 }
 ?>
