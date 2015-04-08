@@ -1,3 +1,4 @@
+var g_id_mesa=null;
 angular.module('starter.controllers', ['starter.services'])
 
 .controller('HomeCtrl', ['Mesas', '$state', '$scope', function(Mesas, $state, $scope) {
@@ -6,11 +7,12 @@ angular.module('starter.controllers', ['starter.services'])
         $scope.mesas = mesas;
     });
 
+
     $scope.adelante = function(mesaId) {
         console.log('HomeCtrl.adelante()');
         // Obtener el valor de la mesa
         // Enviar el estado al servidor
-    
+        g_id_mesa=mesaId;
         Mesas.changeState(mesaId);
         
         // Navegar a otra pantalla para mostrar la carta
@@ -44,10 +46,12 @@ angular.module('starter.controllers', ['starter.services'])
 }])
 .controller('CamareroCtrl', ['Camarero', '$scope', function(Camarero, $scope){
     console.log('CamareroCtrl');
+    console.log(g_id_mesa);
 
 }])
 .controller('PedidoCtrl', ['Pedido', '$scope', function(PedidoCtrl, $scope){
     console.log('PedidoCtrl');
+    console.log(g_id_mesa);
 
 }])
 ;
