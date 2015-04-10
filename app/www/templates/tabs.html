@@ -16,8 +16,10 @@ navigation history that also transitions its views in and out.
   </ion-tab>
 
   <!-- Camarero Tab -->
-  <ion-tab title="Pedido" icon-off="ion-document-text" icon-on="ion-document-text" href="#/tab/pedido">
+  <ion-tab title="Pedido" icon-off="ion-document-text" icon-on="ion-document-text"  href="#/tab/pedido"
+  badge="totalCantidad2" ng-controller="CartaCtrl" badge-style="badge-assertive">
     <ion-nav-view name="tab-pedido"></ion-nav-view>
   </ion-tab>
+  
 
 </ion-tabs>

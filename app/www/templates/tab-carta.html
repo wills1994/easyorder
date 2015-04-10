@@ -1,25 +1,26 @@
 <ion-view view-title="Carta">
   <ion-content class="carta">
     <ion-list>
+      <ion-scroll zooming="true" direction="xy">
+        <div class="item item-divider" ng-repeat-start="(key, categoria) in categorias">
+          {{ categoria.nombre }}
+        </div>
 
-      <div class="item item-divider" ng-repeat-start="(key, categoria) in categorias">
-        {{ categoria.nombre }}
-      </div>
+        <a class="item" href="#" ng-repeat="(key, producto) in categoria.productos">
+          {{ producto.p_nombre }} ({{ producto.precio }}&euro;)
+          <button class="button button-negative pull-right" ng-click="restar(producto)">
+            <i class="icon ion-minus-round"></i>
+          </button>
+          <label class="pull-right">{{ producto.cantidad }}</label>
+          <button class="button button-positive pull-right" ng-click="sumar(producto)">
+            <i class="icon ion-plus-round"></i>
+          </button>
 
-      <a class="item" href="#" ng-repeat="(key, producto) in categoria.productos">
-        {{ producto.p_nombre }} ({{ producto.precio }}&euro;)
-        <button class="button button-negative pull-right" ng-click="restar(producto)">
-          <i class="icon ion-minus-round"></i>
-        </button>
-        <label class="pull-right">{{ producto.cantidad }}</label>
-        <button class="button button-positive pull-right" ng-click="sumar(producto)">
-          <i class="icon ion-plus-round"></i>
-        </button>
+        </a>
 
-      </a>
-
-      <div ng-repeat-end>
-      </div>
+        <div ng-repeat-end>
+        </div>
+      </ion-scroll>
     </ion-list>
   </ion-content>
 </ion-view>

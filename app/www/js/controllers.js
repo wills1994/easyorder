@@ -22,6 +22,8 @@ angular.module('starter.controllers', ['starter.services'])
 }])
 
 .controller('CartaCtrl', ['Carta', '$scope', function(Carta, $scope){
+
+   
     console.log('CartaCtrl');
     Carta.getCategorias(function(categorias){
         for (cat in categorias) {
@@ -33,15 +35,24 @@ angular.module('starter.controllers', ['starter.services'])
         $scope.categorias = categorias;
     });
 
+   
+    var totalCantidad=0;
+
     $scope.sumar = function(producto){
         producto.cantidad++;
+        totalCantidad += 1;
+        $scope.totalCantidad2=totalCantidad;
     };
 
     $scope.restar = function(producto){
         if (producto.cantidad > 0) {
             producto.cantidad--;
+            totalCantidad -= 1;
+            $scope.totalCantidad2=totalCantidad;
         }
     };
+
+    $scope.totalCantidad2=2;
 
 }])
 .controller('CamareroCtrl', ['Camarero', '$scope', function(Camarero, $scope){
