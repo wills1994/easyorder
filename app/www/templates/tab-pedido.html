@@ -2,6 +2,13 @@
   <ion-content>
     <ion-list>
      <h1>Pedido</h1>
+        <ion-scroll zooming="true" direction="xy">
+        <a class="item" href="#" ng-repeat="producto in productos">
+          {{ producto.p_nombre }} ({{ producto.precio }}&euro;)
+          <label class="pull-right">{{ producto.cantidad }}</label>
+        </a>
+      </ion-scroll>
+    </ion-list>
     </ion-list>
   </ion-content>
 </ion-view>

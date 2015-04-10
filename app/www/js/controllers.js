@@ -1,4 +1,7 @@
 var g_id_mesa=null;
+var productos_array=new Array();
+var pro_id=new Array();
+
 angular.module('starter.controllers', ['starter.services'])
 
 .controller('HomeCtrl', ['Mesas', '$state', '$scope', function(Mesas, $state, $scope) {
@@ -42,6 +45,9 @@ angular.module('starter.controllers', ['starter.services'])
         producto.cantidad++;
         totalCantidad += 1;
         $scope.totalCantidad2=totalCantidad;
+        productos_array.push(producto);
+
+        
     };
 
     $scope.restar = function(producto){
@@ -49,6 +55,7 @@ angular.module('starter.controllers', ['starter.services'])
             producto.cantidad--;
             totalCantidad -= 1;
             $scope.totalCantidad2=totalCantidad;//se cambia dinamicament  pero falla en tab de pedido tiene badge
+
         }
     };
 
@@ -65,6 +72,7 @@ angular.module('starter.controllers', ['starter.services'])
 .controller('PedidoCtrl', ['Pedido', '$scope', function(PedidoCtrl, $scope){
     console.log('PedidoCtrl');
     console.log(g_id_mesa);
+    $scope.productos = productos_array;
 
 }])
 ;
