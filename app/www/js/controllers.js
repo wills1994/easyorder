@@ -48,7 +48,7 @@ angular.module('starter.controllers', ['starter.services'])
         if (producto.cantidad > 0) {
             producto.cantidad--;
             totalCantidad -= 1;
-            $scope.totalCantidad2=totalCantidad;
+            $scope.totalCantidad2=totalCantidad;//se cambia dinamicament  pero falla en tab de pedido tiene badge
         }
     };
 
