@@ -46,7 +46,9 @@ angular.module('starter.controllers', ['starter.services'])
 }])
 .controller('CamareroCtrl', ['Camarero', '$scope', function(Camarero, $scope){
     console.log('CamareroCtrl');
-    console.log(g_id_mesa);
+    $scope.llamar=function(){
+        Camarero.changeState(g_id_mesa);
+    }
 
 }])
 .controller('PedidoCtrl', ['Pedido', '$scope', function(PedidoCtrl, $scope){

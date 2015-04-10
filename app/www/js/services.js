@@ -1,10 +1,10 @@
+var LIBRE = 0,
+    OCUPADO = 1,
+    LLAMANDO = 2;
+
 angular.module('starter.services', [])
 
 .factory('Mesas', ['$http', function($http) {
-
-  var LIBRE = 0,
-      OCUPADO = 1,
-      LLAMANDO = 2;
 
   var getAll = function(callback){
     $http.jsonp('http://easyorder.esy.es/model/functions.php?callback=JSON_CALLBACK&selectmesa=null')
@@ -55,7 +55,20 @@ angular.module('starter.services', [])
   };
 }])
 .factory('Camarero', ['$http', function($http){
-  return null;
+    var changeState = function(mesaId){
+      $http.jsonp('http://easyorder.esy.es/model/functions.php?callback=JSON_CALLBACK&id_mesa=' + mesaId + '&estado=' + LLAMANDO)
+        .success(function(mesas, status, headers, config) {
+
+        })
+        .error(function(data, status, headers, config) {
+          console.error(status);
+        });
+  };
+  return {
+    changeState: function(mesaId) {
+      changeState(mesaId);
+    }
+  };
 }])
 .factory('Pedido', ['$http', function($http){
   return null;
